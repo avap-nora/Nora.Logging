@@ -1,5 +1,5 @@
 {
-    "name": "nora/logging",
+    "name": "avap/nora-php-logging",
     "description": "",
     "type": "project",
     "authors": [
@@ -52,30 +52,12 @@
     },
     "require-dev": {
         "phpunit/phpunit": "^8.5",
-        "nora/framework": "dev-master",
-        "nora/business": "dev-master",
-        "nora/utility": "dev-master",
-        "nora/architecture": "dev-master",
+        "avap/nora-php-framework": "dev-master",
+        "avap/nora-php-business": "dev-master",
+        "avap/nora-php-utility": "dev-master",
+        "avap/nora-php-architecture": "dev-master",
         "monolog/monolog": "^2.0"
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://avap.codes/nora/lib/Nora.Framework.git"
-        },
-        {
-            "type": "vcs",
-            "url": "https://avap.codes/nora/lib/Nora.Business.git"
-        },
-        {
-            "type": "vcs",
-            "url": "https://avap.codes/nora/lib/Nora.Utility.git"
-        },
-        {
-            "type": "vcs",
-            "url": "https://avap.codes/nora/lib/Nora.Architecture.git"
-        }
-    ],
     "require": {
         "psr/log": "^1.1",
         "psr/cache": "^1.0",
