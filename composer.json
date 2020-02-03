@@ -52,10 +52,10 @@
     },
     "require-dev": {
         "phpunit/phpunit": "^8.5",
-        "avap/nora-php-framework": "dev-master",
-        "avap/nora-php-business": "dev-master",
-        "avap/nora-php-utility": "dev-master",
-        "avap/nora-php-architecture": "dev-master",
+        "avap/nora-php-framework": "@dev",
+        "avap/nora-php-business": "@dev",
+        "avap/nora-php-utility": "@dev",
+        "avap/nora-php-architecture": "@dev",
         "monolog/monolog": "^2.0"
     },
     "require": {
