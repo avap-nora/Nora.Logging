@@ -2,3 +2,5 @@ vendor/
 *.cache
 *.lock
 .env
+var/cache/
+*.log
