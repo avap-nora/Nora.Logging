@@ -6,7 +6,7 @@ use Nora\Architecture\DI\Annotation\Named;
 use Nora\Architecture\DI\Dependency\ProviderInterface;
 use Nora\Architecture\DI\Injector\InjectionPoint;
 use Nora\Architecture\DI\Injector\InjectionPointInterface;
-use Nora\Framework\Kernel\KernelMeta;
+use Nora\Kernel\KernelMeta;
 use Psr\Log\LoggerInterface;
 use Nora\Architecture\DI\Configuration\AbstractConfigurator;
 use ReflectionClass;

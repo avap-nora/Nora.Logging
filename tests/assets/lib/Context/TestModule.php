@@ -1,15 +1,15 @@
 <?php
-namespace NoraLoggingFake\Kernel\Context;
+namespace NoraLoggingFake\Context;
 
 use Monolog\ErrorHandler;
 use Monolog\Formatter\LineFormatter;
 use Monolog\Handler\SlackHandler;
 use Monolog\Handler\StreamHandler;
 use Monolog\Logger;
-use Nora\Framework\Kernel\AbstractKernelConfigurator;
-use Nora\Logging\Monolog\MonologConfigurator;
+use Nora\Kernel\AbstractKernelModule;
+use Nora\Logging\Monolog\MonologModule;
 
-class TestConfigurator extends AbstractKernelConfigurator
+class TestModule extends AbstractKernelModule
 {
     public function configure()
     {
@@ -78,7 +78,7 @@ class TestConfigurator extends AbstractKernelConfigurator
             );
 
         // モノログを導入
-        $this->install(new MonologConfigurator($this->meta));
+        $this->install(new MonologModule($this->meta));
     }
 }
 

@@ -1,8 +1,7 @@
 <?php
-namespace NoraLoggingFake\Kernel;
+namespace NoraLoggingFake;
 
-use Nora\Framework\Kernel\KernelInterface;
-use Nora\Utility\Globals\Globals;
+use Nora\Kernel\KernelInterface;
 use Psr\Log\LoggerInterface;
 
 class Kernel implements KernelInterface

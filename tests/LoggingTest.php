@@ -5,8 +5,8 @@ namespace Nora\Logging;
 
 use Monolog\Logger;
 use PHPUnit\Framework\TestCase;
-use Nora\Framework\Bootstrap;
-use NoraLoggingFake\Kernel\Kernel;
+use Nora\Kernel\Bootstrap;
+use NoraLoggingFake\Kernel;
 
 class LoggingTest extends TestCase
 {

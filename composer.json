@@ -56,6 +56,7 @@
         "avap/nora-php-business": "@dev",
         "avap/nora-php-utility": "@dev",
         "avap/nora-php-architecture": "@dev",
+        "avap/nora-php-kernel": "@dev",
         "monolog/monolog": "^2.0"
     },
     "require": {
