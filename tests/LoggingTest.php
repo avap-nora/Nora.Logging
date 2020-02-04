@@ -33,4 +33,16 @@ class LoggingTest extends TestCase
         $kernel->logger->alert('テスト3');
         return $kernel;
     }
+
+    /**
+     * @test
+     * @depends モジュールの呼び出し
+     */
+    public function SetLoggerTest(Kernel $kernel)
+    {
+        $kernel->loggableComponent->warning('テスト1');
+
+        $this->assertTrue(method_exists($kernel->loggableComponent, 'emergency'));
+        return $kernel;
+    }
 }

@@ -6,7 +6,7 @@ use Nora\Architecture\DI\Configuration\AbstractConfigurator;
 use Nora\Architecture\DI\InjectorInterface;
 use Psr\Log\LoggerInterface;
 
-trait LoggingTrait
+trait LoggerTrait
 {
     private $logger;
 

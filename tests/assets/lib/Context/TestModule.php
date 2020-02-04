@@ -6,6 +6,7 @@ use Monolog\Formatter\LineFormatter;
 use Monolog\Handler\SlackHandler;
 use Monolog\Handler\StreamHandler;
 use Monolog\Logger;
+use NoraLoggingFake\LoggableComponent;
 use Nora\Kernel\AbstractKernelModule;
 use Nora\Logging\Monolog\MonologModule;
 
@@ -14,14 +15,12 @@ class TestModule extends AbstractKernelModule
     public function configure()
     {
         $this->configureLogging();
+
+        $this->bind(LoggableComponent::class);
     }
 
     private function configureLogging()
     {
-        // ---------------------------------------
-        // ロギング設定
-        // ---------------------------------------
-
         // WARNING以上のログはtest.logへ
         $appHandler = new StreamHandler(
             $this->meta->logDir . '/app.log',
